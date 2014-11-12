@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52A024351A13380D001E86CE /* KKSNotificationController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 52A024341A13380D001E86CE /* KKSNotificationController.h */; };
+		52A024371A13380D001E86CE /* KKSNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A024361A13380D001E86CE /* KKSNotificationController.m */; };
+		52A0243D1A13380D001E86CE /* libKKSNotificationController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A024311A13380D001E86CE /* libKKSNotificationController.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52A0243E1A13380D001E86CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52A024291A13380D001E86CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52A024301A13380D001E86CE;
+			remoteInfo = KKSNotificationController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52A0242F1A13380D001E86CE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				52A024351A13380D001E86CE /* KKSNotificationController.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		52A024311A13380D001E86CE /* libKKSNotificationController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKKSNotificationController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A024341A13380D001E86CE /* KKSNotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKSNotificationController.h; sourceTree = "<group>"; };
+		52A024361A13380D001E86CE /* KKSNotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKSNotificationController.m; sourceTree = "<group>"; };
+		52A0243C1A13380D001E86CE /* KKSNotificationControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KKSNotificationControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A024421A13380D001E86CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52A0242E1A13380D001E86CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A024391A13380D001E86CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A0243D1A13380D001E86CE /* libKKSNotificationController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52A024281A13380D001E86CE = {
+			isa = PBXGroup;
+			children = (
+				52A024331A13380D001E86CE /* KKSNotificationController */,
+				52A024401A13380D001E86CE /* KKSNotificationControllerTests */,
+				52A024321A13380D001E86CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52A024321A13380D001E86CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52A024311A13380D001E86CE /* libKKSNotificationController.a */,
+				52A0243C1A13380D001E86CE /* KKSNotificationControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52A024331A13380D001E86CE /* KKSNotificationController */ = {
+			isa = PBXGroup;
+			children = (
+				52A024341A13380D001E86CE /* KKSNotificationController.h */,
+				52A024361A13380D001E86CE /* KKSNotificationController.m */,
+			);
+			path = KKSNotificationController;
+			sourceTree = "<group>";
+		};
+		52A024401A13380D001E86CE /* KKSNotificationControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				52A024411A13380D001E86CE /* Supporting Files */,
+			);
+			path = KKSNotificationControllerTests;
+			sourceTree = "<group>";
+		};
+		52A024411A13380D001E86CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52A024421A13380D001E86CE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52A024301A13380D001E86CE /* KKSNotificationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A024451A13380D001E86CE /* Build configuration list for PBXNativeTarget "KKSNotificationController" */;
+			buildPhases = (
+				52A0242D1A13380D001E86CE /* Sources */,
+				52A0242E1A13380D001E86CE /* Frameworks */,
+				52A0242F1A13380D001E86CE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KKSNotificationController;
+			productName = KKSNotificationController;
+			productReference = 52A024311A13380D001E86CE /* libKKSNotificationController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		52A0243B1A13380D001E86CE /* KKSNotificationControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52A024481A13380D001E86CE /* Build configuration list for PBXNativeTarget "KKSNotificationControllerTests" */;
+			buildPhases = (
+				52A024381A13380D001E86CE /* Sources */,
+				52A024391A13380D001E86CE /* Frameworks */,
+				52A0243A1A13380D001E86CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52A0243F1A13380D001E86CE /* PBXTargetDependency */,
+			);
+			name = KKSNotificationControllerTests;
+			productName = KKSNotificationControllerTests;
+			productReference = 52A0243C1A13380D001E86CE /* KKSNotificationControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52A024291A13380D001E86CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Xing He";
+				TargetAttributes = {
+					52A024301A13380D001E86CE = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					52A0243B1A13380D001E86CE = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 52A0242C1A13380D001E86CE /* Build configuration list for PBXProject "KKSNotificationController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 52A024281A13380D001E86CE;
+			productRefGroup = 52A024321A13380D001E86CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52A024301A13380D001E86CE /* KKSNotificationController */,
+				52A0243B1A13380D001E86CE /* KKSNotificationControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52A0243A1A13380D001E86CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52A0242D1A13380D001E86CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52A024371A13380D001E86CE /* KKSNotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52A024381A13380D001E86CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52A0243F1A13380D001E86CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52A024301A13380D001E86CE /* KKSNotificationController */;
+			targetProxy = 52A0243E1A13380D001E86CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52A024431A13380D001E86CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		52A024441A13380D001E86CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52A024461A13380D001E86CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		52A024471A13380D001E86CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		52A024491A13380D001E86CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KKSNotificationControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52A0244A1A13380D001E86CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KKSNotificationControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52A0242C1A13380D001E86CE /* Build configuration list for PBXProject "KKSNotificationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A024431A13380D001E86CE /* Debug */,
+				52A024441A13380D001E86CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52A024451A13380D001E86CE /* Build configuration list for PBXNativeTarget "KKSNotificationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A024461A13380D001E86CE /* Debug */,
+				52A024471A13380D001E86CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52A024481A13380D001E86CE /* Build configuration list for PBXNativeTarget "KKSNotificationControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52A024491A13380D001E86CE /* Debug */,
+				52A0244A1A13380D001E86CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52A024291A13380D001E86CE /* Project object */;
+}
