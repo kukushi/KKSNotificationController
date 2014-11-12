@@ -21,7 +21,7 @@
 
 @implementation _KKSNotificationInfo
 
-- (instancetype)initWithOberver:(id)observer
+- (instancetype)initWithObserver:(id)observer
                            name:(NSString *)name
                          object:(id)object
                        selector:(SEL)selector {
@@ -36,23 +36,23 @@
 }
 
 
-+ (instancetype)infoWithOberver:(id)observer
++ (instancetype)infoWithObserver:(id)observer
                            name:(NSString *)name
                          object:(id)object
                        selector:(SEL)selector {
-    return [[_KKSNotificationInfo alloc] initWithOberver:observer name:name object:object selector:selector];
+    return [[_KKSNotificationInfo alloc] initWithObserver:observer name:name object:object selector:selector];
 }
 
-+ (instancetype)infoWithOberver:(id)observer
++ (instancetype)infoWithObserver:(id)observer
                            name:(NSString *)name
                          object:(id)object {
-    return [[_KKSNotificationInfo alloc] initWithOberver:observer name:name object:object selector:nil];
+    return [[_KKSNotificationInfo alloc] initWithObserver:observer name:name object:object selector:nil];
 }
 
-+ (instancetype)infoWithOberver:(id)observer
++ (instancetype)infoWithObserver:(id)observer
                            name:(NSString *)name
                        selector:(SEL)selector {
-    return [[_KKSNotificationInfo alloc] initWithOberver:observer name:name object:nil selector:selector];
+    return [[_KKSNotificationInfo alloc] initWithObserver:observer name:name object:nil selector:selector];
 }
 
 - (NSUInteger)hash {
@@ -86,7 +86,7 @@
 
 @implementation KKSNotificationController
 
-#pragma mark - Initalization
+#pragma mark - Initialization
 
 - (instancetype)initWithObserver:(id)observer {
     if (self = [super init]) {
@@ -114,7 +114,7 @@
                                              selector:@selector(receivedNotification:)
                                                  name:name
                                                object:object];
-    _KKSNotificationInfo *info = [_KKSNotificationInfo infoWithOberver:self.observer
+    _KKSNotificationInfo *info = [_KKSNotificationInfo infoWithObserver:self.observer
                                                                   name:name
                                                               selector:selector];
     NSAssert(self.observer != nil, @"Observer should not be nil");
@@ -138,7 +138,7 @@
                                                                     object:object
                                                                      queue:[NSOperationQueue mainQueue]
                                                                 usingBlock:block];
-    _KKSNotificationInfo *info = [_KKSNotificationInfo infoWithOberver:observer
+    _KKSNotificationInfo *info = [_KKSNotificationInfo infoWithObserver:observer
                                                                   name:name
                                                                 object:object];
     [self.blockInfos addObject:info];
