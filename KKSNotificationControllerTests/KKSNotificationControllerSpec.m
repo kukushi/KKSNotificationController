@@ -175,6 +175,25 @@ describe(@"KKSNotificationController", ^{
         });
     });
     
+    context(@"When observe a nil notification by block", ^{
+        __block KKSNotificationTest *tester = nil;
+        __block NSInteger count = 0;
+        
+        beforeAll(^{
+            tester = [KKSNotificationTest new];
+            [tester.notificationController observeNotification:nil object:nil block:^(NSNotification *notification) {
+                count += 1;
+            }];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"1" object:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"2" object:nil];
+            
+        });
+        
+        it(@"should received all the notifications", ^{
+            [[expectFutureValue(@(count)) shouldEventually] equal:theValue(2)];
+        });
+    });
+    
 });
 
 SPEC_END

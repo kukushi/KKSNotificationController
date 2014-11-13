@@ -20,6 +20,8 @@ typedef void (^KKSNotificationBlock)(NSNotification *notification);
 
 - (void)observeNotification:(NSString *)name object:(id)object block:(KKSNotificationBlock)block;
 
+- (void)observeNotification:(NSString *)name object:(id)object block:(KKSNotificationBlock)block queue:(NSOperationQueue *)queue;
+
 - (void)unobserveNotification:(NSString *)name;
 
 - (void)unobserveNotification:(NSString *)name object:(NSObject *)object;

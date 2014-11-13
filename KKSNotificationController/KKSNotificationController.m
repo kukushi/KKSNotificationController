@@ -89,6 +89,7 @@
 #pragma mark - Initialization
 
 - (instancetype)initWithObserver:(id)observer {
+    NSParameterAssert(observer != nil);
     if (self = [super init]) {
         _observer = observer;
         _blockInfos = [NSMutableSet set];
@@ -117,7 +118,6 @@
     _KKSNotificationInfo *info = [_KKSNotificationInfo infoWithObserver:self.observer
                                                                   name:name
                                                               selector:selector];
-    NSAssert(self.observer != nil, @"Observer should not be nil");
     [self.selectorInfos addObject:info];
 }
 
@@ -134,29 +134,28 @@
 
 
 - (void)observeNotification:(NSString *)name object:(id)object block:(KKSNotificationBlock)block {
+    [self observeNotification:name object:object block:block queue:[NSOperationQueue mainQueue]];
+}
+
+- (void)observeNotification:(NSString *)name object:(id)object block:(KKSNotificationBlock)block queue:(NSOperationQueue *)queue {
     id observer = [[NSNotificationCenter defaultCenter] addObserverForName:name
                                                                     object:object
-                                                                     queue:[NSOperationQueue mainQueue]
+                                                                     queue:queue
                                                                 usingBlock:block];
     _KKSNotificationInfo *info = [_KKSNotificationInfo infoWithObserver:observer
-                                                                  name:name
-                                                                object:object];
+                                                                   name:name
+                                                                 object:object];
     [self.blockInfos addObject:info];
 }
+
 
 #pragma mark - Unobserve
 
 - (void)unobserveNotification:(NSString *)name {
-    if (!name) {
-        return;
-    }
     [self unobserveNotification:name object:nil];
 }
 
 - (void)unobserveNotification:(NSString *)name object:(NSObject *)object {
-    if (!name && !object) {
-        return;
-    }
     
     [[NSNotificationCenter defaultCenter] removeObserver:self name:name object:object];
     
