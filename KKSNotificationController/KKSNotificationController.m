@@ -125,8 +125,11 @@
 - (void)receivedNotification:(NSNotification *)notification {
     NSString *name = notification.name;
     for (_KKSNotificationInfo *info in self.selectorInfos){
-        if ([info.name isEqualToString:name] && info.selector) {
-            [info.observer performSelector:info.selector withObject:notification afterDelay:0.f];
+        if ([info.name isEqualToString:name] && info.selector && [info.observer respondsToSelector:info.selector]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+            [info.observer performSelector:info.selector withObject:notification];
+#pragma clang diagnostic pop
         }
     }
 }
