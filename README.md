@@ -11,13 +11,13 @@ An simple  wrapper of NSNotification operations inspired by FBKVOController. Fet
 // create Notification controller with observer
 MUPNotificationController *notificationController = [MUPNotificationController controllerWithObserver:self];
 self.notificationController = notificationController;
-
+    
 // use Selector
 [self.notificationController observeNotification:notificationName object:nil selector:@selector(NotificationSelector)];
-
+    
 // use Block
 [self.notificationController observeNotification:notificationName object:nil block:^(NSNotification *notification) {
-                // Do something
+    // do something
 }];
 ```
 This is the complete example. The removal of observer will be done when controller is deallocated.
@@ -28,7 +28,7 @@ A `NSObject` Category is provided to give you direct access of controller.
 
 ```
 [self.notificationController observeNotification:notificationName object:nil block:^(NSNotification *notification) {
-              // Do something
+    // Do something
 }];
 ```
 
