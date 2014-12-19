@@ -14,4 +14,9 @@
     self.count += 1;
 }
 
+- (void)plusTwo:(NSNotification *)notification {
+    self.count = -20359;
+}
+
+
 @end
