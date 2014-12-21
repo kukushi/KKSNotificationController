@@ -1,7 +1,7 @@
 KKSNotificationController
 =========================
 
-An simple  wrapper of NSNotification operations inspired by FBKVOController. Fetures include:
+A simple  wrapper of NSNotification operations inspired by FBKVOController. Fetures include:
 
 * Clarity method name
 * Implicit observer removal on controller dealloc.
