@@ -160,14 +160,22 @@
 
 - (void)unobserveNotification:(NSString *)name object:(NSObject *)object {
     
+    NSMutableSet *unobsersedInfos = [NSMutableSet set];
+    
     [[NSNotificationCenter defaultCenter] removeObserver:self name:name object:object];
     
     for (_KKSNotificationInfo *info in self.blockInfos) {
         
         if ([info.name isEqualToString:name] && info.object == object) {
             [[NSNotificationCenter defaultCenter] removeObserver:info.observer name:info.name object:info.object];
+            [unobsersedInfos addObject:info];
         }
     }
+    
+    for (_KKSNotificationInfo *unobsersedInfo in unobsersedInfos) {
+        [self.blockInfos removeObject:unobsersedInfo];
+    }
+    
 }
 
 - (void)unobserveAll {
@@ -178,6 +186,8 @@
                                                         name:info.name
                                                       object:info.object];
     }
+    
+    [self.blockInfos removeAllObjects];
 }
 
 
