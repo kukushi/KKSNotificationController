@@ -9,7 +9,7 @@ A simple  wrapper of NSNotification operations inspired by FBKVOController. Fetu
 ### Usage
 ```
 // create Notification controller with observer
-MUPNotificationController *notificationController = [MUPNotificationController controllerWithObserver:self];
+KKSNotificationController *notificationController = [KKSNotificationController controllerWithObserver:self];
 self.notificationController = notificationController;
     
 // use Selector
