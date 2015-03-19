@@ -6,7 +6,7 @@ A simple  wrapper of NSNotification operations inspired by FBKVOController. Fetu
 * Clarity method name
 * Implicit observer removal on controller dealloc.
 
-### USage
+### Usage
 ```
 // create Notification controller with observer
 MUPNotificationController *notificationController = [MUPNotificationController controllerWithObserver:self];
